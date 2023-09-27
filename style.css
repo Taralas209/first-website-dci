@@ -1,0 +1,273 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-top: 0;
+  margin: 0;
+}
+
+body.scrolled .header-hidden {
+  top: 0;
+}
+
+section {
+  max-width: 1400px;
+  margin: 0px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+section > p {
+  width: 80%;
+  margin: 30px auto;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.styled-line {
+  border: none;
+  height: 5px;
+  background-color: #F2D22E;
+  width: 20%;
+  margin: 20px auto;
+  margin-top: 10px;
+}
+
+/* INTRO: */
+.intro {
+  background: url("./images/1638975895_420130_58.jpg") no-repeat center
+    center/cover;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 150px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.intro-content {
+  text-align: center;
+  color: white;
+}
+
+.button-styled-link {
+  display: inline-block;
+  background: none;
+  border: 3px solid white;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  bottom: 70px;
+  text-decoration: none;
+}
+
+.button-styled-link:hover {
+  background: white;
+  color: black;
+}
+
+.button-styled-link:active,
+.button-styled-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* Header NAV: */
+.header-hidden {
+  z-index: 1;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  background-color: white;
+  transition: top 0.5s ease-in-out;
+}
+
+.menu-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  z-index: 1000;
+}
+
+.menu-nav a {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+}
+
+.menu-nav a:hover {
+  color: #ffe700;
+}
+
+/* GEOGRAPHY: */
+.location {
+  margin: 30px auto 0px;
+  padding-top: 40px;
+}
+
+/* NATURE: */
+.nature {
+  margin: 30px auto 0px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 650px;
+  border: 0;
+}
+
+
+.video-container {
+  max-width: 100%;
+  overflow: hidden;
+  padding-top: 56%;
+  position: relative;
+}
+
+
+.video-container iframe {
+  border: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1500px;
+  max-width: 100%;
+}
+
+/* ATTRACTION: */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.flex-item {
+  flex: 1;
+  min-width: calc(33.333% - 20px);
+  margin: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.flex-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.flex-item h3,
+.flex-item p {
+  margin: 15px;
+}
+
+/* HISTORY & PEOPLE:*/
+
+.history ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 5px;
+}
+
+.history li {
+  margin-bottom: 30px;
+}
+
+.year-container {
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.total {
+  background-color: #f2f2f2;
+}
+
+.before-yellow {
+  background-color: #f2d22e;
+}
+
+.after-blue {
+  background-color: #00abc2;
+}
+
+.now-green {
+  background-color: #36bfa6;
+}
+
+/* FOOTER: */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links a,
+.contact-info p {
+  margin: 0 10px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
